@@ -1,6 +1,6 @@
 # todo.md
 
-A "todo list" format that supports features like Markdown, tagging, [ABCD analysis](https://en.wikipedia.org/wiki/Time_management#ABCD_analysis). The format is designed to work seemlessly with any text editor:
+A "todo list" format that supports [Markdown](https://www.markdownguide.org/), tagging, [ABCD analysis](https://en.wikipedia.org/wiki/Time_management#ABCD_analysis), collaboration. The format is designed to work seemlessly with any text editor:
   * Markdown editors ([Obsidian](https://obsidian.md/), [Roam Research](https://roamresearch.com/))
   * Text editors ([Notepad](https://apps.microsoft.com/store/detail/windows-notepad/9MSMLRH6LZF3?hl=en-us&gl=us), [TextEdit](https://support.apple.com/guide/textedit/welcome/mac), [VS Code](https://code.visualstudio.com/docs/languages/markdown))
   * Command line editors ([vim](https://www.vim.org/), [nano](https://www.nano-editor.org/), [micro](https://micro-editor.github.io/))
