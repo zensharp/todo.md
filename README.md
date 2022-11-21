@@ -16,8 +16,8 @@ A "todo list" format that supports [Markdown](https://www.markdownguide.org/), t
 | Low Priority | `* [ ] (C) Call Saul` |
 | Cancel/ignore | `* [ ] ~~Call Saul~~` |
 | Due Date | `* [ ] Call Saul 2009-04-26` |
-| Tags | `* [ ] Call Saul #work #backlog` |
-| Assignees | `* [ ] Call Saul @me @jesse` |
+| Tag(s) | `* [ ] Call Saul #work #backlog` |
+| Assignee(s) | `* [ ] Call Saul @me @jesse` |
 
 ### Examples
 
