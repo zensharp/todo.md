@@ -48,9 +48,9 @@ Use your favorite markdown editor, edit/view the todo list:
      <word> ::= <ALNUM> | "-" | "_"
    <status> ::= "[ ]" | "[x]"
  <priority> ::= "(A)" | "(B)" | "(C)"
+  <content> ::= [<priority>" "] <TITLE> [": "<DESCRIPTION>]
      <tags> ::= "#"<word> [<tags>]
 <assignees> ::= "@"<word> [<assignees>]
-  <content> ::= [<priority>" "] <TITLE> [": "<DESCRIPTION>]
      <meta> ::= [<tags>] ["due:"<DATE>] [<assignees>]
      <task> ::= "* " [<status>] (<content>|"~~"<content>"~~") [<meta>]
 ```
