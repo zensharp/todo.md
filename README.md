@@ -10,7 +10,7 @@ A "todo list" format that supports [Markdown](https://www.markdownguide.org/), t
 | --- | --- |
 | Incomplete task | `* [ ] Call Saul` |
 | Complete a task | `* [x] Call Saul` |
-| Description | `* [ ] Call Saul: inqiure about nephew's arrest` |
+| Description | `* [ ] Call Saul: inquire about nephew's arrest` |
 | High Priority | `* [ ] (A) Call Saul` |
 | Medium Priority | `* [ ] (B) Call Saul` |
 | Low Priority | `* [ ] (C) Call Saul` |
