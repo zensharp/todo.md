@@ -8,42 +8,51 @@ A "todo list" format that supports [Markdown](https://www.markdownguide.org/), t
 # Syntax
 | Feature | Code |
 | --- | --- |
-| Incomplete Task | `* [ ] Call Saul` |
-| Completed Task | `* [x] Call Saul` |
-| Description | `* [ ] Call Saul: ask for help` |
+| Incomplete task | `* [ ] Call Saul` |
+| Complete a task | `* [x] Call Saul` |
+| Description | `* [ ] Call Saul: inqiure about nephew's arrest` |
 | High Priority | `* [ ] (A) Call Saul` |
 | Medium Priority | `* [ ] (B) Call Saul` |
 | Low Priority | `* [ ] (C) Call Saul` |
-| Cancel/ignore | `* [ ] ~~Call Saul~~` |
-| Due Date | `* [ ] Call Saul 2009-04-26` |
+| Cancel/ignore a task | `* [ ] ~~Call Saul~~` |
 | Tag(s) | `* [ ] Call Saul #work #backlog` |
-| Assignee(s) | `* [ ] Call Saul @me @jesse` |
+| Due Date | `* [ ] Call Saul due:2009-04-26` |
+| Assignee(s) | `* [ ] Call Saul @me @jpinkman` |
 
 ### Examples
 
 ```
-* [ ] Go shopping #work @jesse
-* [ ] ~~Pay Gretchen/Elliot #backlog~~
-* [x] (B) Call Saul: ask for help 2009-04-29 #work #backlog @me @jesse
+* [ ] Go shopping #work @jpinkman
+* [ ] ~~Pay Gretchen/Elliot: hospital bills~~ #backlog
+* [x] (B) Call Saul: inquire about nephew's arrest #work #backlog due:2009-04-29 @me @jpinkman
 ```
 
-Here's that code rendered:
-* [ ] Go shopping #work @jesse
-* [ ] ~~Pay Gretchen/Elliot #backlog~~
-* [x] (B) Call Saul: ask for help 2009-04-29 #work #backlog @me @jesse
+Use your favorite markdown editor, edit/view the todo list:
+
+### GitHub Flavored Markdown
 
 ---
+
+* [ ] Go shopping #work @jpinkman
+* [ ] ~~Pay Gretchen/Elliot: hospital bills~~ #backlog
+* [x] (B) Call Saul: ask for help due:2009-04-29 #work #backlog @me @jpinkman
+
+---
+
+### Obsidian
+![obsidian](https://user-images.githubusercontent.com/48300131/203187819-b38ec602-c1bc-4c64-a729-c2d545a987f4.png)
 
 ## Grammar
 
 ```
      <word> ::= <ALNUM> | "-" | "_"
    <status> ::= "[ ]" | "[x]"
-  <priority ::= "A" | "B" | "C"
+ <priority> ::= "A" | "B" | "C"
      <tags> ::= "#"<word> [<tags>]
 <assignees> ::= "@"<word> [<assignees>]
-  <content> ::= ["("<priority>")"] <title>[":" <description>] [<date>] [<tags>] [<assignees>]
-     <task> ::= "*" [<status>] (<content>|"~~"<content>"~~")
+  <content> ::= ["("<priority>")"] <TITLE>[":" <DESCRIPTION>]
+     <meta> ::= [<tags>] ["due:"<DATE>] [<assignees>]
+     <task> ::= "*" [<status>] (<content>|"~~"<content>"~~") [<meta>]
 ```
 
 # See Also
