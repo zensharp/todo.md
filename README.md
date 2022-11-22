@@ -50,8 +50,9 @@ Use your favorite markdown editor, edit/view the todo list:
  <priority> ::= "(A)" | "(B)" | "(C)"
   <content> ::= [<priority>" "] <TITLE> [": "<DESCRIPTION>]
      <tags> ::= "#"<word> [<tags>]
+     <date> ::= "due:"<DATE>
 <assignees> ::= "@"<word> [<assignees>]
-     <meta> ::= [<tags>] ["due:"<DATE>] [<assignees>]
+     <meta> ::= [<tags>] [<date>] [<assignees>]
      <task> ::= "* " [<status>] (<content>|"~~"<content>"~~") [<meta>]
 ```
 
