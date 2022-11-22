@@ -47,12 +47,12 @@ Use your favorite markdown editor, edit/view the todo list:
 ```
      <word> ::= <ALNUM> | "-" | "_"
    <status> ::= "[ ]" | "[x]"
- <priority> ::= "A" | "B" | "C"
+ <priority> ::= "(A)" | "(B)" | "(C)"
      <tags> ::= "#"<word> [<tags>]
 <assignees> ::= "@"<word> [<assignees>]
-  <content> ::= ["("<priority>") "]<TITLE>[": "<DESCRIPTION>]
+  <content> ::= [<priority>" "] <TITLE> [": "<DESCRIPTION>]
      <meta> ::= [<tags>] ["due:"<DATE>] [<assignees>]
-     <task> ::= "*" [<status>] (<content>|"~~"<content>"~~") [<meta>]
+     <task> ::= "* " [<status>] (<content>|"~~"<content>"~~") [<meta>]
 ```
 
 # See Also
