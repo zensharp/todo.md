@@ -35,7 +35,7 @@ Use your favorite markdown editor, edit/view the todo list:
 
 * [ ] Go shopping #work @jpinkman
 * [ ] ~~Pay Gretchen/Elliot: hospital bills~~ #backlog
-* [x] (B) Call Saul: ask for help due:2009-04-29 #work #backlog @me @jpinkman
+* [x] (B) Call Saul: inquire about nephew's arrest #work #backlog due:2009-04-29 @me @jpinkman
 
 ---
 
